@@ -2,11 +2,161 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/sizeyoho/">
-  <link rel="canonical" href="https://miyaapps.com/sizeyoho/">
-  <title>サイズ予報 | MIYA APPS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIYA APPS｜子育てに寄りそうアプリを作っています</title>
+  <meta name="description" content="MIYA APPSは、子育てや暮らしを少しラクにする小さなアプリを作っている個人開発スタジオです。">
+  <link rel="canonical" href="https://miyaapps.com/">
+  <meta property="og:title" content="MIYA APPS">
+  <meta property="og:description" content="子育てや暮らしを少しラクにする、小さなアプリを作っています。">
+  <meta property="og:url" content="https://miyaapps.com/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234F9974'/%3E%3Ctext x='32' y='44' font-size='34' font-weight='bold' font-family='sans-serif' fill='%23FDF9EF' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --mint: #C8EDDB;
+      --mint-light: #EAF8F0;
+      --accent: #38875F;
+      --accent-dark: #347F59;
+      --text: #3D444D;
+      --text-sub: #55606B;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      color: var(--text);
+      background: var(--mint-light);
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: linear-gradient(160deg, var(--mint) 0%, #DDF3E7 60%, var(--mint-light) 100%);
+      text-align: center;
+      padding: 72px 20px 56px;
+    }
+    .brand {
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    .tagline {
+      margin-top: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-sub);
+    }
+    main { padding: 48px 0 24px; }
+    h2 {
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      padding-left: 12px;
+      border-left: 5px solid var(--accent);
+    }
+    .app-card {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: #fff;
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 4px 16px rgba(61, 68, 77, 0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      margin-bottom: 18px;
+    }
+    .app-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(61, 68, 77, 0.14);
+    }
+    .app-card img {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      flex-shrink: 0;
+    }
+    .app-card h3 {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--accent-dark);
+    }
+    .app-card .status {
+      display: inline-block;
+      margin-left: 8px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--mint-light);
+      border: 1px solid var(--mint);
+      border-radius: 999px;
+      padding: 1px 10px;
+      vertical-align: 2px;
+    }
+    .app-card p {
+      margin-top: 6px;
+      font-size: 14px;
+      color: var(--text-sub);
+    }
+    .app-card .more {
+      margin-top: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--accent-dark);
+    }
+    .about {
+      margin-top: 40px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(61, 68, 77, 0.08);
+      font-size: 14.5px;
+    }
+    footer {
+      text-align: center;
+      padding: 36px 20px 44px;
+      font-size: 13px;
+      color: var(--text-sub);
+    }
+    footer a { color: var(--accent-dark); font-weight: 700; }
+  </style>
 </head>
 <body>
-  <p><a href="/sizeyoho/">サイズ予報のページへ移動する</a></p>
+  <header>
+    <div class="brand">MIYA APPS</div>
+    <p class="tagline">子育てや暮らしを少しラクにする、小さなアプリを作っています。</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>アプリ</h2>
+
+      <a class="app-card" href="/sizeyoho/">
+        <img src="/sizeyoho/icon.png" alt="サイズ予報のアイコン">
+        <div>
+          <h3>サイズ予報<span class="status">公開準備中</span></h3>
+          <p>子どもの成長記録から、服・靴・おむつの「次のサイズ」と買い替え時期を予報。成長曲線の記録や受診レポートPDFにも対応しています。</p>
+          <div class="more">くわしく見る →</div>
+        </div>
+      </a>
+
+      <section class="about">
+        <h2>MIYA APPSについて</h2>
+        <p>ひとりの親として「あったら助かる」と思ったものを、かたちにしている個人開発スタジオです。派手さよりも、毎日の小さな困りごとがひとつ減ることを大切にしています。</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p><a href="/sizeyoho/contact.html">お問い合わせ</a></p>
+    <p>&copy; 2026 MIYA APPS</p>
+  </footer>
 </body>
 </html>
